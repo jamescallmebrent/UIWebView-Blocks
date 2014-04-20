@@ -13,5 +13,10 @@ Pod::Spec.new do |s|
   s.source_files  = 'UIWebView+Blocks.**'
   s.exclude_files = 'UIWebView-BlocksExample/**'
   s.requires_arc  = true
+
+  # NOTE: Putty additions
+  # src: http://guides.cocoapods.org/syntax/podspec.html#prefix_header_contents
+  s.prefix_header_contents =
+    '#import "UIWebView+Blocks.h"'
 end
 
